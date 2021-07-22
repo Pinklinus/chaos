@@ -16,6 +16,9 @@ class Idea2: UIViewController {
 
          if let dataFromCoreData = try? accessToCoreData.fetch(ProjectCDCD.fetchRequest()) as? [ProjectCDCD] {
               imageName = dataFromCoreData
+            if let helppp = imageName.imageNewIdea {
+                ImageDisplay.image = UIImage(named: helppp)
+            }
              }
          }
     
@@ -27,11 +30,7 @@ class Idea2: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    func pleaseWork (){
-        if let helppp = imageName.imageNewIdea {
-            ImageDisplay.image = UIImage(named: helppp)
-        }
-    }
+ 
 
     /*
     // MARK: - Navigation
